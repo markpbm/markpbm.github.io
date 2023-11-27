@@ -1,0 +1,165 @@
+/* Estilos para la fila que contiene las columnas */
+.fila {
+    display: flex;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+.navegacion {
+    width: 100%;
+    background-color: #026426;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.30);
+}
+
+.barra_navegacion a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 200px;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    max-width: 1300px;
+    margin: 20px -15px;
+    padding: 20px;
+}
+
+/* Estilos para el mensaje emergente */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+/* Estilos para el contenido del mensaje emergente */
+.popup-contenido {
+    text-align: center;
+}
+
+/* Estilos para el mensaje de éxito */
+.mensaje.success {
+    color: #155724;
+}
+
+/* Estilos para el mensaje de error */
+.mensaje.error {
+    color: #721c24;
+}
+
+/* Estilos para el botón de cierre del mensaje emergente */
+.cerrar-mensaje {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para los campos de formulario */
+.form-control {
+    border: 2px solid #5cb3fd;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px #5cb3fd;
+}
+
+input[type="text"],
+textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Estilos para los botones */
+.btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la tabla */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilos para las celdas de la tabla */
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para las celdas de encabezado */
+.tabla th {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 50px 15px 15px;
+}
+
+/* Añade un margen inferior a la tarjeta */
+.card {
+    margin-inline-end: 20px;
+}
+
+/* Estilos adicionales para las celdas del cuerpo de la tabla */
+.tabla tbody td {
+    padding: 10px 40px 10px 10px;
+}
+
+.btn1 i {
+    color: white; /* Color del icono en btn1 */
+    border-radius: 5px;
+    background-color: #555; /* Fondo gris oscuro para el icono en btn1 */
+    padding: 8px; /* Ajusta el relleno según tu preferencia */
+}
+
+.btn2 i {
+    color: white; /* Color del icono en btn2 */
+    border-radius: 5px;
+    background-color: #f60404; /* Fondo gris claro para el icono en btn2 */
+    padding: 8px; /* Ajusta el relleno según tu preferencia */
+}
+
+.btn1 i, .btn2 i{
+    margin: 0 4px;
+}

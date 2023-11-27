@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO A TU ALCANCE.</title>
+        <link rel="stylesheet" href="../css/registro.css">
+    </head>
+
+    <body>
+        
+        <div class="contenedor">
+
+            <header>Registro</header>
+            <form action="../php/formulario.php" method="POST">
+                <div class="form">
+                    <div class="detalles personales">
+                        <span class="titulo">Detalles Personales</span>
+                        <div class="input-campos">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" placeholder="Ingrese su nombre" name="nombre" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="input-campos">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" placeholder="Ingrese su apellido" name="apellido" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="input-campos">
+                            <label for="correo">Correo</label>
+                            <input type="text" id="correo" placeholder="Ingrese su correo" name="correo" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="input-campos">
+                            <label for="correo">Contraseña</label>
+                            <input type="text" id="contrasena" placeholder="Ingrese su correo" name="contrasena" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                    </div>
+                    <button type="button" class="enviarBtn" name="send">
+                        <span class="btnText" name="enviar">Enviar</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <script src="../js/formulario.js"></script>
+
+    </body>
+
+</html>

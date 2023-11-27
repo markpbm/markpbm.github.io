@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/contacto.css">
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="contactInfo">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="../imagenes/location.png" alt=""></span>
+                                <span>25001, Peru, Pucallpa</span>
+                            </li>
+                            <li>
+                                <span><img src="../imagenes/mail.png" alt=""></span>
+                                <span>lorem@ipsum.com</span>
+                            </li>
+                            <li>
+                                <span><img src="../imagenes/call.png" alt=""></span>
+                                <span>211-222-333</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="#"><img src="../imagenes/1.png"></a></li>
+                        <li><a href="#"><img src="../imagenes/2.png"></a></li>
+                        <li><a href="#"><img src="../imagenes/3.png"></a></li>
+                        <li><a href="#"><img src="../imagenes/4.png"></a></li>
+                        <li><a href="#"><img src="../imagenes/5.png"></a></li>
+                    </ul>
+                </div>
+
+                <form action="../php/contacto.php" method="POST">
+                    <div class="contactForm">
+                        <h2>Envia un Mensaje</h2>
+                        <div class="formBox">
+                            <div class="inputBox w50">
+                                <input type="text" name="nombre_contacto" required>
+                                <span>Nombres</span>
+                            </div>
+                            <div class="inputBox w50">
+                                <input type="text" name="apellido_contacto" required>
+                                <span>Apellidos</span>
+                            </div>
+                            <div class="inputBox w50">
+                                <input type="email" name="correo_contacto" required>
+                                <span>Correo</span>
+                            </div>
+                            <div class="inputBox w50">
+                                <input type="number" name="numero" required>
+                                <span>Celular</span>
+                            </div>
+                            <div class="inputBox w100">
+                                <textarea name="comentario" required></textarea>
+                                <span>Escribe tu mensaje aqui..</span>
+                            </div>
+                            <div class="inputBox w100">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
